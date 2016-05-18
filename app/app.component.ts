@@ -1,4 +1,6 @@
-import {Component} from "@angular/core";
+import {Component, Input} from "@angular/core";
+// import {SessionsService, Session} from "./session.service";
+// import {SessionComponent} from "./session.component";
 
 @Component({
     selector: "my-app",

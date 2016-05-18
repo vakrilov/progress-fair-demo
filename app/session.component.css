@@ -28,14 +28,21 @@ label {
     color: #034D8D;
 }
 
-
+/*
 @keyframes spin {
-    from { transform: rotate(0); }
-    to { transform: rotate(360); }
+    from { 
+        transform: rotate(0), scale(1,1);
+        animation-timing-function: ease-in; }
+    
+    50% { 
+        transform: rotate(180), scale(1.4,1.4);
+        animation-timing-function: ease-out; }
+        
+    to { transform: rotate(360), scale(1,1); }
 }
 
 .fav {
     animation-name: spin;
     animation-duration: 0.4s;
     animation-fill-mode: forwards;
-}
+}*/
