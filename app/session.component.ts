@@ -7,7 +7,8 @@ import {Session} from "./session.service";
   template: `
     <grid-layout columns="auto, *" rows="auto, auto, auto" class="container" (tap)="select.next()">
       <image rowSpan="3"
-        [src]="session.isFav ? 'res://fav_1' : 'res://fav_0'"></image>
+        [src]="session.isFav ? 'res://fav_1' : 'res://fav_0'"
+        [class.fav]="session.isFav"></image>
       
       <Label col="1" row="0" [text]="(session.start | date:'HHmm') + ' - ' + (session.end | date:'HHmm')" class="time"></Label>
       <Label col="1" row="1" [text]="session.title" textWrap="true" class="title"></Label>
