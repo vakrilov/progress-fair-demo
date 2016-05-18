@@ -7,7 +7,7 @@ import {Session, SessionsService} from "./session.service";
         <grid-layout row="1"  columns="auto *" rows="auto auto auto" class="container">
             <image rowSpan="3" [src]="session.isFav ? 'res://fav_1' : 'res://fav_0'"></image>
             
-            <Label col="1" row="0" [text]="session.start" class="time"></Label>
+            <Label col="1" row="0" [text]="(session.start | date:'HHmm') + ' - ' + (session.end | date:'HHmm')" class="time"></Label>
             <Label col="1" row="1" [text]="session.title" class="title"></Label>
             <Label col="1" row="2" [text]="session.speaker" class="speaker"></Label>              
         </grid-layout>
