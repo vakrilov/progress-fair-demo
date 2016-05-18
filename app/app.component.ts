@@ -12,7 +12,7 @@ import {SessionComponent} from "./session.component";
         
         <scroll-view row="2">
             <stack-layout>
-                <session *ngFor="let session of sessions" [session]="session"></session>
+                <session *ngFor="let session of sessions" [session]="session" (select)="toggleSession(session)"></session>
             </stack-layout>
         </scroll-view>
         
@@ -24,5 +24,9 @@ export class AppComponent {
 
     constructor(service: SessionsService) {
         this.sessions = service.getSessions();
+    }
+
+    public toggleSession(session: Session) {
+        session.isFav = !session.isFav;
     }
 }

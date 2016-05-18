@@ -5,7 +5,7 @@ import {Session} from "./session.service";
   selector: 'session',
   styleUrls: ["./session.component.css"],
   template: `
-    <grid-layout columns="auto, *" rows="auto, auto, auto" class="container" >
+    <grid-layout columns="auto, *" rows="auto, auto, auto" class="container" (tap)="select.next()">
       <image rowSpan="3"
         [src]="session.isFav ? 'res://fav_1' : 'res://fav_0'"></image>
       
@@ -17,4 +17,5 @@ import {Session} from "./session.service";
 })
 export class SessionComponent {
   @Input() session: Session;
+  @Output() select: EventEmitter<any> = new EventEmitter();
 }
