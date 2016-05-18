@@ -1,0 +1,41 @@
+image {
+    width: 30;
+    height: 30;
+    margin-right: 16;
+}
+
+label {
+    text-wrap: true;
+}
+
+.container  {
+    padding: 16;    
+}
+
+.title {
+    font-size: 16;
+    color: #333333;
+}
+
+.time {
+    font-size: 12;
+    font-weight: bold;
+    color: #034D8D;
+}
+
+.speaker {
+    font-size: 12;
+    color: #034D8D;
+}
+
+
+@keyframes spin {
+    from { transform: rotate(0); }
+    to { transform: rotate(360); }
+}
+
+.fav {
+    animation-name: spin;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
