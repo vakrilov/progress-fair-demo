@@ -10,9 +10,12 @@ import {SessionComponent} from "./session.component";
     <grid-layout rows="auto auto *">
         <image src="res://header"></image>
         
+        <Switch row="1" [(ngModel)]="favOnly"></Switch>
+        
+        
         <scroll-view row="2">
             <stack-layout>
-                <session *ngFor="let session of sessions" [session]="session" (select)="toggleSession(session)"></session>
+                <session *ngFor="let session of filteredSessions" [session]="session" (select)="toggleSession(session)"></session>
             </stack-layout>
         </scroll-view>
         
@@ -21,6 +24,11 @@ import {SessionComponent} from "./session.component";
 })
 export class AppComponent {
     public sessions: Session[];
+    public favOnly: boolean;
+
+    public get filteredSessions(): Session[] {
+        return this.sessions.filter(s => !this.favOnly || s.isFav);
+    }
 
     constructor(service: SessionsService) {
         this.sessions = service.getSessions();
