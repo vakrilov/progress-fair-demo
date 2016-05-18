@@ -11,7 +11,7 @@ export interface Session {
 
 
 var _sessions: Session[] = [
-    { id: 0, title: "The Future of Technology at Progress", speaker: "Faris Sweis, Mike Benedict, Rob Steward", start: new Date(2016, 5, 16, 10, 0), end: new Date(2016, 5, 16, 10, 45), isFav: false },
+    { id: 0, title: "The Future of Technology at Progress", speaker: "Faris Sweis, Mike Benedict, Rob Steward", start: new Date(2016, 5, 16, 10, 0), end: new Date(2016, 5, 16, 10, 45), isFav: true },
     { id: 1, title: "Brand and Culture in Action", speaker: "Melissa Puls, Jerry Rulli", start: new Date(2016, 5, 16, 10, 50), end: new Date(2016, 5, 16, 11, 35), isFav: true },
     { id: 2, title: "Let Test Studio Turn You Into a Testing Hero", speaker: "Iliyan Panchev, Ivan Atanasov", start: new Date(2016, 5, 16, 11, 45), end: new Date(2016, 5, 16, 12, 15), isFav: false },
     { id: 3, title: "Sitefinity - the CMS of Choice for the Big Players", speaker: "Grirgori Karanikolov", start: new Date(2016, 5, 16, 11, 45), end: new Date(2016, 5, 16, 12, 15), isFav: false },

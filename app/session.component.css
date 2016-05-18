@@ -29,6 +29,11 @@ label {
 }
 
 
+
+
+
+/*
+
 @keyframes spin {
     from { transform: rotate(0); }
     to { transform: rotate(360); }
@@ -39,3 +44,5 @@ label {
     animation-duration: 0.4s;
     animation-fill-mode: forwards;
 }
+
+*/

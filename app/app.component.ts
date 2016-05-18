@@ -8,8 +8,13 @@ import {Session, SessionsService} from "./session.service";
     <grid-layout rows="auto auto *">
         <image src="res://header"></image>
         
-        <label row="1" [text]="first.title"></label>
-        
+        <grid-layout row="1"  columns="auto *" rows="auto auto auto" class="container">
+            <image rowSpan="3" [src]="first.isFav ? 'res://fav_1' : 'res://fav_0'"></image>
+            
+            <Label col="1" row="0" [text]="first.start" class="time"></Label>
+            <Label col="1" row="1" [text]="first.title" class="title"></Label>
+            <Label col="1" row="2" [text]="first.speaker" class="speaker"></Label>              
+        </grid-layout>
     </grid-layout>
 `,
 })
