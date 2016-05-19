@@ -8,5 +8,6 @@
             "when": "$(basename).ts"
         },
         "**/*.js.map": true
-    }
+    },
+    "editor.fontSize": 13
 }
