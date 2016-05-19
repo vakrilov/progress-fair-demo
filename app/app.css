@@ -1,23 +1,11 @@
-﻿label {
-    text-wrap: true;
+﻿switch {
+    horizontal-align: right;
+    margin: 10;
 }
 
-.container  {
-    padding: 16;    
-}
-
-.title {
-    font-size: 16;
-    color: #333333;
-}
-
-.time {
-    font-size: 12;
+.toggle {
+    margin: 10 70;
+    horizontal-align: right;
     font-weight: bold;
-    color: #034D8D;
-}
-
-.speaker {
-    font-size: 12;
-    color: #034D8D;
+    vertical-align: center;
 }

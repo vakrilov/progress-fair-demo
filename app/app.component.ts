@@ -10,12 +10,14 @@ import {SessionComponent} from "./session.component";
     <grid-layout rows="auto auto *">
         <image src="res://header"></image>
         
+        <Label row="1" class="toggle" text="SHOW ONLY FAVOURITES"></Label>
         <Switch row="1" [(ngModel)]="favOnly"></Switch>
         
         
         <scroll-view row="2">
             <stack-layout>
-                <session *ngFor="let session of filteredSessions" [session]="session" (select)="toggleSession(session)"></session>
+                <session *ngFor="let mySession of filteredSessions"
+                 [session]="mySession" (select)="toggleSession(mySession)"></session>
             </stack-layout>
         </scroll-view>
         
