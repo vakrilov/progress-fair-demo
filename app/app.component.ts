@@ -1,9 +1,10 @@
 import {Component, Input} from "@angular/core";
-// import {SessionsService, Session} from "./session.service";
+import {SessionsService, Session} from "./session.service";
 // import {SessionComponent} from "./session.component";
 
 @Component({
     selector: "my-app",
+    // directives: [SessionComponent],
     template: `
 <StackLayout>
     <Label text="Tap the button" class="title"></Label>

@@ -28,7 +28,7 @@ label {
     color: #034D8D;
 }
 
-/*
+
 @keyframes spin {
     from { 
         transform: rotate(0), scale(1,1);
@@ -45,4 +45,4 @@ label {
     animation-name: spin;
     animation-duration: 0.4s;
     animation-fill-mode: forwards;
-}*/
+}
