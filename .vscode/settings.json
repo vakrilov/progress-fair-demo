@@ -9,5 +9,5 @@
         },
         "**/*.js.map": true
     },
-    "editor.fontSize": 13
+    "editor.fontSize": 23
 }
